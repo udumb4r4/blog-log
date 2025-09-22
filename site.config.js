@@ -32,9 +32,9 @@ const CONFIG = {
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
-  notionConfig: {
-    pageId: '276c5b45d3b880af9629c4aa181cd1ce'
-  },
+notionConfig: {
+  pageId: '276c5b45d3b880af9629c4aa181cd1ce',
+},
 
   // plugin configuration (optional)
   googleAnalytics: {
