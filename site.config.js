@@ -54,12 +54,11 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: true,
-    config: {
-      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
-      "issue-term": "og:title",
-      label: "💬 Utterances",
-    },
+  enable: true,
+  config: {
+    repo: 'udumb4r4/blog-log', 
+    'issue-term': 'og:title',  
+    label: '💬 Utterances', 
   },
   cusdis: {
     enable: false,
