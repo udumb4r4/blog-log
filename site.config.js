@@ -10,12 +10,14 @@ const CONFIG = {
     github: "udumb4r4",
     instagram: "",
   },
+
   projects: [
     {
       name: `udumbara`,
       href: "empty",
     },
   ],
+
   // blog setting (required)
   blog: {
     title: "udumbara",
@@ -23,7 +25,7 @@ const CONFIG = {
     scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
-  // CONFIG configration (required)
+  // CONFIG configuration (required)
   link: "https://udumbara.vercel.app",
   since: 2025, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
@@ -31,7 +33,7 @@ const CONFIG = {
 
   // notion configuration (required)
   notionConfig: {
-  pageId: '276c5b45d3b880af9629c4aa181cd1ce'
+    pageId: '276c5b45d3b880af9629c4aa181cd1ce'
   },
 
   // plugin configuration (optional)
@@ -41,25 +43,30 @@ const CONFIG = {
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "G-Y0Y4DCZG8B",
     },
   },
+
   googleSearchConsole: {
     enable: true,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "fSyj9aPWOj6zDpHUQ9imqMifHvk5flFhB6QKd4tTKdc",
     },
   },
+
   naverSearchAdvisor: {
     enable: false,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION || "",
     },
   },
+
   utterances: {
-  enable: true,
-  config: {
-    repo: 'udumb4r4/blog-log', 
-    'issue-term': 'og:title',  
-    label: '💬 Utterances', 
+    enable: true,
+    config: {
+      repo: 'udumb4r4/blog-log',
+      'issue-term': 'og:title',
+      label: '💬 Utterances',
+    },
   },
+
   cusdis: {
     enable: false,
     config: {
@@ -67,7 +74,8 @@ const CONFIG = {
       appid: "", // Embed Code -> data-app-id value
     },
   },
-  isProd: process.env.VERCEL_ENV === "development", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+
+  isProd: process.env.VERCEL_ENV === "development", // distinguish between development and production environment
   revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
 
